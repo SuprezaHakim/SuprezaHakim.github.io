@@ -1,0 +1,149 @@
+/* GLOBAL STYLES */
+body { 
+    font-family: 'Courier New', monospace; 
+    background: #0d1117; 
+    color: #c9d1d9; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px 40px; 
+    line-height: 1.6;
+}
+
+/* NAVIGATION MENU */
+nav {
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+nav a {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+/* HEADERS */
+h1, h2, h3 { 
+    color: #58a6ff; 
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+h1 { font-size: 2.5em; border-bottom: none; }
+h2 { margin-top: 50px; }
+
+/* SECTIONS & TEXT */
+.section { margin-bottom: 40px; }
+.bio-text { font-size: 1.1em; color: #8b949e; }
+
+/* PROFILE PICTURE & BIO LAYOUT */
+.bio-container {
+    display: flex;          /* This forces them side-by-side */
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 30px;              /* Space between image and text */
+}
+
+.profile-pic {
+    width: 150px;           /* Control the size here */
+    height: 150px;          
+    object-fit: cover;      /* Prevents stretching */
+    object-position: center top; /* Focuses on your face, not your chest */
+    border-radius: 50%;     /* Circular shape */
+    border: 3px solid #58a6ff;
+    flex-shrink: 0;         /* Stops the image from getting squished */
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* GALLERIES (For Images) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: #161b22;
+    padding: 10px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.caption { font-size: 0.9em; color: #8b949e; }
+
+/* SKILLS SECTION LAYOUT */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.skill-category h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #58a6ff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* SKILL BADGES */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #21262d;
+    color: #c9d1d9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 1px solid #30363d;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* SKILL HOVER EFFECT */
+.skill-tag:hover {
+    background: #58a6ff;
+    color: #0d1117;
+    border-color: #58a6ff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+    cursor: default;
+}

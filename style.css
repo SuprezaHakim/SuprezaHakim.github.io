@@ -55,7 +55,7 @@ h2 { margin-top: 50px; }
     width: 150px;           /* Control the size here */
     height: 150px;          
     object-fit: cover;      /* Prevents stretching */
-    object-position: center top; /* Focuses on your face, not your chest */
+    object-position: center top; /* Focuses on my face, not my chest */
     border-radius: 50%;     /* Circular shape */
     border: 3px solid #58a6ff;
     flex-shrink: 0;         /* Stops the image from getting squished */

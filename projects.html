@@ -18,15 +18,29 @@
 
     <section class="section">
         <h2>FIRST Robotics Competition (FRC Team 333)</h2>
-        <p>Lead Programmer for "The Megalodons" (Team 333). Developing advanced control systems in Java.</p>
-        
-       <div class="project">
+        <p>Lead Programmer for "The Megalodons" (Team 333), building competition robot control systems in Java.</p>
+
+        <div class="project">
+            <h3>🤖 FRC 2026 Season: "FinDiesel"</h3>
+            <p><strong>Role: Lead Programmer</strong> | Java, WPILib, AdvantageKit, CTRE Phoenix 6, PhotonVision</p>
+            <p>
+                Lead programmer for Team 333's 2026 competition robot for the game "Rebuilt." Architected a
+                multi-mode control scheme using WPILib <code>EventLoop</code> swapping to cleanly separate
+                teleop-auto, teleop-manual, and test modes, and built a vision-aligned climb sequence that fuses
+                PathPlanner pathfinding with PhotonVision AprilTag pose correction for precision endgame scoring.
+                Diagnosed and resolved critical performance issues including a NetworkTables publisher cascade
+                that was causing 380+ loop overruns per match, and rewrote shooter targeting to use
+                <code>MotionMagicVelocityTorqueCurrentFOC</code> for battery-independent flywheel RPM control.
+            </p>
+            <a href="https://github.com/FRC-Team-333-The-Megalodons/FinDiesel2026">View Team Repository &rarr;</a>
+        </div>
+
+        <div class="project">
             <h3>🤖 FRC 2025 Season: "Chief Reef"</h3>
             <p><strong>Role: Lead Programmer</strong> | Java, WPILib, AdvantageScope</p>
             <p>
-                Developing the complete control software for the 2025 competition robot. 
-                Implemented a <strong>complex logging and simulation system</strong> that records real-time match data, 
-                allowing for full match replay and debugging of autonomous routines without physical hardware.
+                Shipped the full control software stack, including a logging and simulation pipeline that enabled
+                full match replay and autonomous routine debugging without physical hardware.
             </p>
             <a href="https://github.com/FRC-Team-333-The-Megalodons/FRC-2025-Chief-Reef">View Team Repository &rarr;</a>
         </div>
@@ -34,7 +48,7 @@
         <div class="project">
             <h3>🤖 FRC 2024 Season Robot</h3>
             <p><strong>Role: Programmer</strong> | Java, WPILib</p>
-            <p>Engineered the Java-based codebase for the 2024 season robot, integrating sensor feedback (encoders, gyros) for precise motor control.</p>
+            <p>Built the Java codebase for the 2024 season robot, integrating encoder and gyro feedback for closed-loop motor control.</p>
             <a href="https://github.com/FRC-Team-333-The-Megalodons/FRC-2024-Bot">View Team Repository &rarr;</a>
         </div>
     </section>
@@ -46,17 +60,17 @@
         <div class="gallery">
             <div class="gallery-item">
                 <img src="images/prosthetic_hand.png" alt="Prosthetic Hand Design">
-                <div class="caption"><strong>Prosthetic Hand</strong><br>Designed articulate finger joints and palm structure for functional gripping.</div>
+                <div class="caption"><strong>Prosthetic Hand</strong><br>Articulated finger joints and palm assembly modeled for tendon-driven grip actuation.</div>
             </div>
 
             <div class="gallery-item">
                 <img src="images/pi_case.png" alt="Raspberry Pi 5 Case">
-                <div class="caption"><strong>Raspberry Pi 5 Case</strong><br>Custom enclosure with ventilation ports and precise IO cutouts.</div>
+                <div class="caption"><strong>Raspberry Pi 5 Case</strong><br>Custom enclosure with vent geometry and dimensioned IO cutouts matched to the Pi 5 board layout.</div>
             </div>
 
             <div class="gallery-item">
                 <img src="images/ultimate_goal.png" alt="Ultimate Goal Robot">
-                <div class="caption"><strong>"Ultimate Goal" Robot</strong><br>Full robot assembly designed for competitive robotics gameplay.</div>
+                <div class="caption"><strong>"Ultimate Goal" Robot</strong><br>Full competition robot assembly modeled in Onshape, including drivetrain and scoring mechanism.</div>
             </div>
         </div>
     </section>
@@ -66,13 +80,13 @@
         
         <div class="project">
             <h3>Dungeon Crawler Engine</h3>
-            <p>A text-based interactive fiction engine demonstrating OOP principles.</p>
+            <p>Text-based interactive fiction engine built in Java, using inheritance and polymorphism to model rooms, items, and entity behavior as composable game objects.</p>
             <a href="https://github.com/SuprezaHakim/DungeonCrawler">View Code &rarr;</a>
         </div>
 
         <div class="project">
             <h3>Scientific Calculator</h3>
-            <p>GUI-based calculator implementing a Stack-based algorithm for Order of Operations.</p>
+            <p>GUI calculator that parses infix expressions and evaluates them with a stack-based shunting-yard implementation, correctly handling operator precedence and parentheses.</p>
             <a href="https://github.com/SuprezaHakim/ScientificCalculatorGUI">View Code &rarr;</a>
         </div>
     </section>

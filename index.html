@@ -1,103 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hakim Boev - Bio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakim - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Devicon for Skill Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="active">Biography</a>
-        <a href="projects.html">Projects</a>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Hakim</span>.</h1>
+            <p>I'm a Software Engineer specializing in Java and Computer Vision.</p>
+            <a href="#about" class="cta-btn">View my work <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <header>
-        <h1>Hakim Boev</h1>
-        <p>CS & Mathematics @ Brandeis | Robotics Software Engineer</p>
-        <p class="education">Brandeis University, Waltham MA &mdash; B.S. Computer Science &amp; Mathematics (Incoming)</p>
-    </header>
-
-    <section class="section">
-        <h2>Who I Am</h2>
-        
-        <div class="bio-container">
-            <img src="images/BioPic.PNG" alt="Hakim Boev" class="profile-pic">
+    <!-- About Section -->
+    <section id="about" class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="divider"></div>
             
-            <div class="bio-text">
-                <p>
-                    I taught myself <strong>C, Java, and Python</strong> long before I had a classroom to learn them in,
-                    drawn to the puzzle of figuring out how things work under the hood. Every error message was a problem
-                    worth chasing down rather than a wall to bounce off.
+            <div class="about-content">
+                <p class="bio">
+                    Fully committed to the philosophy of life-long learning, I’m a Software Engineer with a deep passion for Java, Computer Vision, and solving complex technical challenges. The unique combination of creativity, logic, technology, and never running out of new things to discover drives my excitement for software development. When I’m not at my computer, I like to spend my time going for a jog and watching movies.
                 </p>
-                <p>
-                    That curiosity led me to my high school's <strong>Robotics Team</strong>, where I moved from writing
-                    scripts to shipping software that controls physical hardware under competition pressure&mdash;
-                    integrating sensors, debugging real-time systems, and collaborating with mechanical and electrical
-                    sub-teams on tight deadlines.
-                </p>
+
+                <div class="skills-grid">
+                    <div class="skill-pill"><i class="devicon-html5-plain"></i> HTML</div>
+                    <div class="skill-pill"><i class="devicon-java-plain"></i> JAVA</div>
+                    <div class="skill-pill"><i class="devicon-python-plain"></i> PYTHON</div>
+                    <div class="skill-pill"><i class="devicon-javascript-plain"></i> JAVASCRIPT</div>
+                    <div class="skill-pill"><i class="devicon-git-plain"></i> GIT</div>
+                    <div class="skill-pill"><i class="devicon-c-plain"></i> C</div>
+                    <div class="skill-pill"><i class="devicon-cplusplus-plain"></i> C++</div>
+                    <div class="skill-pill"><i class="devicon-css3-plain"></i> CSS</div>
+                    <div class="skill-pill"><i class="devicon-mysql-plain"></i> SQL</div>
+                    <div class="skill-pill"><i class="devicon-php-plain"></i> PHP</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <h2>Robotics in Action</h2>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="divider"></div>
 
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="images/robotics_comp1.png" alt="FRC Team 333 at Regional competition">
-                <div class="caption">FRC Team 333 on the field at a regional competition.</div>
-            </div>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image (e.g. src="findiesel.jpg") -->
+                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=FinDiesel2026+Robot" alt="FinDiesel2026">
+                    <div class="project-info">
+                        <h3>FinDiesel2026</h3>
+                        <p>FRC 2026 Robot code utilizing complex physics and vision detection to complete FIRST Robotics Competition tasks.</p>
+                        <a href="https://github.com/FRC-Team-333-The-Megalodons/FinDiesel2026" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                    </div>
+                </div>
 
-            <div class="gallery-item">
-                <img src="images/robotics_comp2.png" alt="Pit-side debugging between matches">
-                <div class="caption">Pit-side debugging and code deploys between qualification matches.</div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image -->
+                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=Chief-Reef+Robot" alt="FRC-2025-Chief-Reef">
+                    <div class="project-info">
+                        <h3>FRC-2025-Chief-Reef</h3>
+                        <p>FRC 2025 Robot codebase featuring advanced computer vision and complex physics systems for competitive robotics.</p>
+                        <a href="https://github.com/FRC-Team-333-The-Megalodons/FRC-2025-Chief-Reef" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image -->
+                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=CarWash_ALPR" alt="CarWash_ALPR">
+                    <div class="project-info">
+                        <h3>CarWash_ALPR</h3>
+                        <p>Computer vision software for automatic license plate detection (ALPR) made for a local car wash to track customers for a loyalty program, utilizing image filtering and database storage.</p>
+                        <a href="https://github.com/SuprezaHakim/CarWash_ALPR" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <!-- THIS IS WHERE YOUR GIG-LANGUAGE-APP PICTURE GOES! 
+                         Just place your image in the same folder as this HTML file 
+                         and change the src below to your file name (e.g., src="my-app-pic.png") -->
+                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=Insert+gig-language-app+Image+Here" alt="gig-language-app">
+                    <div class="project-info">
+                        <h3>gig-language-app (ToDo)</h3>
+                        <p>A specialized application to manage tasks and language gigs. (Insert more detailed description here).</p>
+                        <a href="https://github.com/SuprezaHakim/gig-language-app" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">C</span>
-                    <span class="skill-tag">Python</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">WPILib</span>
-                    <span class="skill-tag">CTRE Phoenix 6</span>
-                    <span class="skill-tag">PhotonVision</span>
-                    <span class="skill-tag">AdvantageKit</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>CAD & Design</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">Onshape</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Dev Tools & IDEs</h3>
-                <div class="skill-list">
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">IntelliJ IDEA</span>
-                    <span class="skill-tag">Android Studio</span>
-                    <span class="skill-tag">Eclipse</span>
-                    <span class="skill-tag">Git/GitHub</span>
-                </div>
-            </div>
-
+    <!-- Contact Section -->
+    <section id="contact" class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="divider"></div>
+            <p class="contact-subtext">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+            
+            <!-- Using FormSubmit to automatically route emails to your Gmail -->
+            <form action="https://formsubmit.co/hakimjon.boev@gmail.com" method="POST" class="contact-form">
+                <!-- Disable Captcha for smoother user experience -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Submission from Portfolio Site!">
+                
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                <button type="submit" class="btn submit-btn">SUBMIT</button>
+            </form>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/SuprezaHakim" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:hakimjon.boev@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>HAKIM BOEV &copy; 2024</p>
+        <a href="#hero" class="scroll-top"><i class="fas fa-chevron-up"></i></a>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakim - Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Devicon for Skill Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- FontAwesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Particles Background -->
     <section id="hero">
+        <div id="particles-js"></div>
         <div class="hero-content">
             <h1>Hello, I'm <span class="highlight">Hakim</span>.</h1>
             <p>I'm a Software Engineer specializing in Java and Computer Vision.</p>
@@ -44,77 +42,78 @@
                     Fully committed to the philosophy of life-long learning, I’m a Software Engineer with a deep passion for Java, Computer Vision, and solving complex technical challenges. The unique combination of creativity, logic, technology, and never running out of new things to discover drives my excitement for software development. When I’m not at my computer, I like to spend my time going for a jog and watching movies.
                 </p>
 
+                <!-- Updated Skills Grid to match the new image style -->
                 <div class="skills-grid">
-                    <div class="skill-pill"><i class="devicon-html5-plain"></i> HTML</div>
-                    <div class="skill-pill"><i class="devicon-java-plain"></i> JAVA</div>
-                    <div class="skill-pill"><i class="devicon-python-plain"></i> PYTHON</div>
-                    <div class="skill-pill"><i class="devicon-javascript-plain"></i> JAVASCRIPT</div>
-                    <div class="skill-pill"><i class="devicon-git-plain"></i> GIT</div>
-                    <div class="skill-pill"><i class="devicon-c-plain"></i> C</div>
-                    <div class="skill-pill"><i class="devicon-cplusplus-plain"></i> C++</div>
-                    <div class="skill-pill"><i class="devicon-css3-plain"></i> CSS</div>
-                    <div class="skill-pill"><i class="devicon-mysql-plain"></i> SQL</div>
-                    <div class="skill-pill"><i class="devicon-php-plain"></i> PHP</div>
+                    <div class="skill-box"><i class="devicon-html5-plain" style="color: #e34f26;"></i> <span>HTML</span></div>
+                    <div class="skill-box"><i class="devicon-java-plain" style="color: #f89820;"></i> <span>JAVA</span></div>
+                    <div class="skill-box"><i class="devicon-python-plain" style="color: #3776ab;"></i> <span>PYTHON</span></div>
+                    <div class="skill-box"><i class="devicon-javascript-plain" style="color: #f7df1e;"></i> <span>JAVASCRIPT</span></div>
+                    <div class="skill-box"><i class="devicon-git-plain" style="color: #f05032;"></i> <span>GIT</span></div>
+                    <div class="skill-box"><i class="devicon-c-plain" style="color: #a8b9cc;"></i> <span>C</span></div>
+                    <div class="skill-box"><i class="devicon-cplusplus-plain" style="color: #00599c;"></i> <span>C++</span></div>
+                    <div class="skill-box"><i class="devicon-css3-plain" style="color: #1572b6;"></i> <span>CSS</span></div>
+                    <div class="skill-box"><i class="devicon-mysql-plain" style="color: #4479a1;"></i> <span>SQL</span></div>
+                    <div class="skill-box"><i class="devicon-php-plain" style="color: #777bb4;"></i> <span>PHP</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (Updated for side-by-side full page layout) -->
     <section id="projects">
-        <div class="container">
-            <h2 class="section-title">PROJECTS</h2>
-            <div class="divider"></div>
+        <h2 class="section-title" style="padding-top: 60px;">PROJECTS</h2>
+        <div class="divider"></div>
 
-            <div class="projects-grid">
-                
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image (e.g. src="findiesel.jpg") -->
-                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=FinDiesel2026+Robot" alt="FinDiesel2026">
-                    <div class="project-info">
-                        <h3>FinDiesel2026</h3>
-                        <p>FRC 2026 Robot code utilizing complex physics and vision detection to complete FIRST Robotics Competition tasks.</p>
-                        <a href="https://github.com/FRC-Team-333-The-Megalodons/FinDiesel2026" target="_blank" class="btn outline-btn">LEARN MORE</a>
-                    </div>
+        <div class="projects-container">
+            
+            <!-- Project 1 -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1200x800/252525/e31b6d?text=FinDiesel2026+Robot" alt="FinDiesel2026">
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image -->
-                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=Chief-Reef+Robot" alt="FRC-2025-Chief-Reef">
-                    <div class="project-info">
-                        <h3>FRC-2025-Chief-Reef</h3>
-                        <p>FRC 2025 Robot codebase featuring advanced computer vision and complex physics systems for competitive robotics.</p>
-                        <a href="https://github.com/FRC-Team-333-The-Megalodons/FRC-2025-Chief-Reef" target="_blank" class="btn outline-btn">LEARN MORE</a>
-                    </div>
+                <div class="project-info">
+                    <h3>FinDiesel2026</h3>
+                    <p>FRC 2026 Robot code utilizing complex physics and vision detection to complete FIRST Robotics Competition tasks.</p>
+                    <a href="https://github.com/FRC-Team-333-The-Megalodons/FinDiesel2026" target="_blank" class="btn outline-btn">LEARN MORE</a>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <!-- PUT YOUR IMAGE HERE: Replace the src link below with the name of your image -->
-                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=CarWash_ALPR" alt="CarWash_ALPR">
-                    <div class="project-info">
-                        <h3>CarWash_ALPR</h3>
-                        <p>Computer vision software for automatic license plate detection (ALPR) made for a local car wash to track customers for a loyalty program, utilizing image filtering and database storage.</p>
-                        <a href="https://github.com/SuprezaHakim/CarWash_ALPR" target="_blank" class="btn outline-btn">LEARN MORE</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <!-- THIS IS WHERE YOUR GIG-LANGUAGE-APP PICTURE GOES! 
-                         Just place your image in the same folder as this HTML file 
-                         and change the src below to your file name (e.g., src="my-app-pic.png") -->
-                    <img src="https://via.placeholder.com/600x300/252525/e31b6d?text=Insert+gig-language-app+Image+Here" alt="gig-language-app">
-                    <div class="project-info">
-                        <h3>gig-language-app (ToDo)</h3>
-                        <p>A specialized application to manage tasks and language gigs. (Insert more detailed description here).</p>
-                        <a href="https://github.com/SuprezaHakim/gig-language-app" target="_blank" class="btn outline-btn">LEARN MORE</a>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Project 2 -->
+            <div class="project-row">
+                <div class="project-info">
+                    <h3>FRC-2025-Chief-Reef</h3>
+                    <p>FRC 2025 Robot codebase featuring advanced computer vision and complex physics systems for competitive robotics.</p>
+                    <a href="https://github.com/FRC-Team-333-The-Megalodons/FRC-2025-Chief-Reef" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1200x800/252525/e31b6d?text=Chief-Reef+Robot" alt="FRC-2025-Chief-Reef">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-row">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1200x800/252525/e31b6d?text=CarWash_ALPR" alt="CarWash_ALPR">
+                </div>
+                <div class="project-info">
+                    <h3>CarWash_ALPR</h3>
+                    <p>Computer vision software for automatic license plate detection (ALPR) made for a local car wash to track customers for a loyalty program, utilizing image filtering and database storage.</p>
+                    <a href="https://github.com/SuprezaHakim/CarWash_ALPR" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-row">
+                <div class="project-info">
+                    <h3>gig-language-app (ToDo)</h3>
+                    <p>A specialized application to manage tasks and language gigs.</p>
+                    <a href="https://github.com/SuprezaHakim/gig-language-app" target="_blank" class="btn outline-btn">LEARN MORE</a>
+                </div>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1200x800/252525/e31b6d?text=Insert+gig-language-app+Image+Here" alt="gig-language-app">
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -125,9 +124,7 @@
             <div class="divider"></div>
             <p class="contact-subtext">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
             
-            <!-- Using FormSubmit to automatically route emails to your Gmail -->
             <form action="https://formsubmit.co/hakimjon.boev@gmail.com" method="POST" class="contact-form">
-                <!-- Disable Captcha for smoother user experience -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New Submission from Portfolio Site!">
                 
@@ -149,15 +146,41 @@
         <a href="#hero" class="scroll-top"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
-    <!-- Smooth Scrolling Script -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
+        // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
+        });
+
+        // Particles.js configuration for the background network animation
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "repulse": { "distance": 100, "duration": 0.4 },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
         });
     </script>
 </body>
